@@ -1,0 +1,6 @@
+# Safe template only. The first-run setup wizard saves the real file to
+# %APPDATA%\CampusPath\database.properties with a current-user-only Windows ACL.
+# Replace the placeholder password locally; never commit your real credentials.
+CAMPUSPATH_DB_URL=jdbc:postgresql://localhost:5432/campuspath_db
+CAMPUSPATH_DB_USER=YOUR_LOCAL_POSTGRES_USERNAME
+CAMPUSPATH_DB_PASSWORD=YOUR_LOCAL_POSTGRES_PASSWORD

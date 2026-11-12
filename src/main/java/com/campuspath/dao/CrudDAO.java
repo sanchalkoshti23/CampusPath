@@ -1,0 +1,15 @@
+package com.campuspath.dao;
+
+import java.sql.SQLException;
+import java.util.List;
+import java.util.Optional;
+
+public interface CrudDAO<T> {
+    Optional<T> findById(long id) throws SQLException;
+
+    List<T> findAll() throws SQLException;
+
+    T save(T entity) throws SQLException;
+
+    boolean update(T entity) throws SQLException;
+}
